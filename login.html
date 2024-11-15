@@ -1,0 +1,84 @@
+<html>
+    <style>
+        form {
+            border: 3px solid #f1f1f1;
+            padding: 20px;
+            margin: 20px;
+        }
+        
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        
+        .buttone {
+            background-color: #ff2f00;
+            color: rgb(253, 253, 253);
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        .buttone1 {
+            background-color: #ff2f00;
+            color: rgb(253, 253, 253);
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        button:hover {
+            opacity: 0.8;
+        }
+        
+        .container {
+            padding: 16px;
+        }
+        
+        .buttone:hover {
+            opacity: 0.8;
+        }
+        
+        .login-box {
+            width: 400px;
+            margin: 0 auto;
+        }
+    </style>
+<body background="http://127.0.0.1:8080/kp.png">
+    <div class="login-box">
+        <center>
+            <h2>Login</h2>
+        </center>
+            <form class="container" action="http://127.0.0.1:8080/home.html/" method="GET">  
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="username" required>
+
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+
+                <input type="Submit" value="Submit" class="buttone1">
+            </form>
+                <br>
+                <br>
+              <form action="http://127.0.0.1:8080/sign-up.html/" method="get">
+                <center>
+                  <input type="submit" value="sing-up" class="buttone">
+                </center>
+                </form>
+                <br>
+                <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vehicle Booking</title>
+   <style>  body {
+                                font-family: Arial, sans-serif;
+                                margin: 0;
+                            }
+                            
+                            header {
+                                background-color: #333;
+                                color: #fff;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 1em;
+                            }
+                            
+                            nav ul {
+                                list-style: none;
+                                display: flex;
+                                gap: 1em;
+                            }
+                            
+                            nav a {
+                                color: #fff;
+                                text-decoration: none;
+                                font-weight: bold;
+                                padding: 0.5em;
+                                border-radius: 5px;
+                                transition: background-color 0.3s ease;
+                            }
+                            
+                            nav a:hover {
+                                background-color: #555;
+                            }
+                            
+                            main {
+                                padding: 2em;
+                            }
+                            
+                            h2 {
+                                margin-bottom: 1em;
+                            }
+                            
+                            form {
+                                display: flex;
+                                flex-wrap: wrap;
+                                gap: 1em;
+                            }
+                            
+                            label {
+                                font-weight: bold;
+                                display: block;
+                            }
+                            
+                            input[type="text"],
+                            input[type="date"],
+                            button {
+                                font-size: 1em;
+                                padding: 0.5em;
+                                border-radius: 5px;
+                                border: none;
+                            }
+                            
+                            button {
+                                background-color: #333;
+                                color: #fff;
+                                cursor: pointer;
+                                transition: background-color 0.3s ease;
+                            }
+                            
+                            button:hover {
+                                background-color: #555;
+                            }
+                            
+                            ul {
+                                list-style: none;
+                                padding: 0;
+                            }
+                            
+                            li {
+                                border: 1px solid #ccc;
+                                padding: 1em;
+                                margin-bottom: 1em;
+                                border-radius: 5px;
+                            }
+                            
+                            .book-button {
+                                background-color: #333;
+                                color: #fff;
+                                border: none;
+                                border-radius: 5px;
+                                padding: 0.5em;
+                                cursor: pointer;
+                                transition: background-color 0.3s ease;
+                            }
+                            
+                            .book-button:hover {
+                                background-color: #555;
+                            }
+</style>
+</head>
+
+<body background="C:\final\k44.jpg">
+    <header>
+        <h1>Vehicle Ticket Booking </h1>
+        <nav>
+            <ul>
+                <li><a href="C:\final 01\home.html">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Bookings</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Search for Trips</h2>
+        <form>
+            <label for="from">From</label>
+            <input type="text" id="from" name="from">
+            <label for="to">To</label>
+            <input type="text" id="to" name="to">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date">
+            <button type="submit">Search</button>
+        </form>
+        <ul id="trips">
+            <li>
+                <h3>Trip 1</h3>
+                <p>From: City A</p>
+                <p>To: City B</p>
+                <p>Departure Time: 10:00am</p>
+                <button class="book-button">Book Now</button>
+            </li>
+            <li>
+                <h3>Trip 2</h3>
+                <p>From: City C</p>
+                <p>To: City D</p>
+                <p>Departure Time: 1:00pm</p>
+                <button class="book-button">Book Now</button>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <p>Bus Ticket Booking System &copy; 2023</p>
+    </footer>
+    </bodyback>
+
+</html>

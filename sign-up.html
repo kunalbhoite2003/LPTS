@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up Page</title>
+	<style>
+		form {
+			border: 2px solid black;
+			padding: 20px;
+			width: 400px;
+			margin: auto;
+		}
+		
+		input[type=text], input[type=password], input[type=email] {
+			width: 100%;
+			padding: 10px;
+			margin: 5px 0 15px 0;
+			display: inline-block;
+			border: 1px solid #990404;
+			box-sizing: border-box;
+		}
+		
+		button[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		
+		button[type=submit]:hover {
+			opacity: 0.8;
+		}
+		
+		.container {
+			padding: 40px;
+            align-content: right;
+		}
+        form{
+            align-items:start;
+            background-color:#f3900efd;
+        }
+		
+		span.psw {
+			float:right ;
+			padding-top: 16px;
+		}
+	</style>
+</head>
+<body background="C:\final project\369980209.jpg">
+	<form action="http://127.0.0.1:8080/sign-up.html/" method="get">
+		<div class="container">
+			<h1>Sign Up</h1>
+			<label for="name"><b>Name</b></label>
+			<input type="text" placeholder="Enter Name" name="name" required>
+			
+			<label for="email"><b>Email</b></label>
+			<input type="email" placeholder="Enter Email" name="email" required>
+			
+			<label for="password"><b>set Password</b></label>
+			<input type="password" placeholder="Enter Password" name="password" required>
+			
+			<label for="password-repeat"><b>Repeat Password</b></label>
+			<input type="password" placeholder="Repeat Password" name="password-repeat" required>
+			
+			<button type="submit" value="sing-up"> Sign Up</button>
+		</div>
+	</form>
+</body>
+</html>
